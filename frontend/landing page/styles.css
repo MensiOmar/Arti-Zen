@@ -104,7 +104,7 @@ html {
   letter-spacing: 0.4rem;
   padding: 0 1.2rem;
   font-weight: 300;
-  color: rgb(254, 252, 252);
+  color: #C4DDFF;
 }
 
 .nav-links {
@@ -118,16 +118,19 @@ html {
 }
 
 .nav-links li a {
-  color: white;
+  color: #fee2c5;
   cursor: pointer;
 }
 
 .cir_border {
   padding: 6px 20px;
   font-weight: bold;
-  border: 2px hidden whitesmoke;
+  border: 2px hidden #C4DDFF;
   border-radius: 20px;
   margin: 0px -10px;
+}
+.cir_border:hover{
+    color: #fee2c59f
 }
 .menu-btn {
   position: absolute;
@@ -136,4 +139,9 @@ html {
   width: 40px;
   cursor: pointer;
   display: none;
+}
+.active {
+  border: 2px solid #C4DDFF;
+  border-radius: 20px;
+  cursor: pointer;
 }
