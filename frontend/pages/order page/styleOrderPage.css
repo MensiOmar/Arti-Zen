@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+/* Root element (aka html) */
+:root {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  /* CSS Variables */
+  /* Fonts */
+  --ff-parisienne: "Parisienne", cursive;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-lora: "Lora", serif;
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-rubik-dirt: "Rubik Dirt", cursive;
+  --fs-paragraphs: calc(0.8rem + 0.35vw);
+  --fs-links-btns: calc(0.65rem + 0.5vw);
+}
+
+
+
 body{
     margin:0;
     background:url(../../assets/order\ page\ background.jpg) center center / cover no-repeat; ; 
@@ -10,7 +31,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: saturate(180%) blur(10px);
     display: flex;
     width: 100%;
@@ -64,11 +85,12 @@ body{
     cursor: pointer;
     display: none;
   }
-  a:active {
+  .active {
     border: 2px solid #c4ddff;
     border-radius: 20px;
     cursor: pointer;
   }
+
 /*section*/
 section{
     position: relative;
@@ -79,6 +101,7 @@ section{
     background-color: burlywood;
     margin:auto;
     margin-top: 0;
+    margin-bottom: 350px;
     display: flex;
     background: rgba(242, 237, 232, 0.4);
     backdrop-filter: blur(15px);
@@ -188,12 +211,9 @@ section > h1{
     color: rgb(24, 24, 24);
     border: 1px solid rgba(24, 24, 24, 0.3);
 }
-/*footer*/
+/* footer */
 footer {
-  position: relative;
-  bottom: -230px;
-  display: block;
-  background-color: black;
+  background-color: #c4ddffc7;
   color: #fee2c5;
   padding: 30px;
   font-family: var(--ff-montserrat);

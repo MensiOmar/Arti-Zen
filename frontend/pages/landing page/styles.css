@@ -146,7 +146,7 @@ html {
   cursor: pointer;
 }
 header {
-  background-image: url("../assets/bg.jpg");
+  background-image: url("/Arti-Zen/frontend/assets/bg.jpg");
   background-size: cover;
   background-position: center;
 
