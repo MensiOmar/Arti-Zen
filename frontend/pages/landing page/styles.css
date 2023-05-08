@@ -46,12 +46,6 @@ span {
   padding: 0px 40px;
 }
 
-/* .active {
-  color: #fc036b;
-  border-radius: 20px;
-  background: whitesmoke;
-  font-weight: bold;
-} */
 
 body,
 html {
@@ -464,6 +458,105 @@ main {
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: left;
+}
+/* feedback */
+#feedback{
+  height: 100vh;
+  width:100%;
+  background-image: url(../../assets/bg-4.jpg);
+  background-size: cover;
+  background-position:center;
+  opacity: 0.85;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#feedback > header {
+  margin-top: 5%;
+  margin-bottom: 6%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(242, 237, 232);
+
+}
+#feedback > header > h1{
+  font-size: 50px;
+  margin-bottom: 1%;
+  font-weight: 400;
+}
+#feedback > header > p {
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+}
+#feedback > #feedback-form{
+  width: 40%;
+  height: 100%;
+}
+#feedback > #feedback-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.small-input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 45px 0px 25px;
+  height: 50px;
+  margin: 20px 0px 0px;
+  font-size: 16px;
+  appearance: none;
+  border-radius: 50px;
+  border: 1px solid rgba(24, 24, 24, 0.3);
+  color: rgb(24, 24, 24);
+}
+textarea{
+  width: 100%;
+    resize: none;
+    padding: 25px;
+    margin: 20px 0px 30px;
+    max-height: 200px;
+    color: rgb(24, 24, 24);
+    font-size: 16px;
+    box-sizing: border-box;
+    appearance: none;
+    border-radius: 25px;
+    border: 1px solid rgba(24, 24, 24, 0.3);
+}
+.btn{
+    
+  max-width: 300px;
+  border: none;
+  border-radius: 50px;
+  white-space: nowrap;
+  background: linear-gradient(-180deg, rgb(215, 197, 166) 0%, rgb(160, 133, 89) 96%) no-repeat;
+  color: rgb(255, 255, 255);
+  box-shadow: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0px 40px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  word-break: initial;
+  outline: none;
+}
+.btn:hover{
+  background: linear-gradient(-180deg, rgb(242, 237, 232) 0%, rgba(24, 24, 24, 0.3) 96%) no-repeat;
+  transition: 0.5s ease ;
+
+  
+
 }
 /* footer */
 footer {
