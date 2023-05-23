@@ -241,7 +241,10 @@ section>h1 {
   outline: none;
   grid-column: 2/4;
 }
-
+.btn:hover{
+  background: linear-gradient(-180deg, rgb(242, 237, 232) 0%, rgba(24, 24, 24, 0.3) 96%) no-repeat;
+  transition: 0.5s ease ;
+}
 .input-title {
   display: block;
   margin-bottom: 2%;

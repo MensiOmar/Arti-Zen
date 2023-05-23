@@ -17,7 +17,7 @@ function validateForm() {
   var addressError = document.getElementById("addressError");
   var descriptionError = document.getElementById("descriptionError");
 
-  // Clear previous error messages
+// Clear previous error messages
   crafterNameError.textContent = "";
   productNameError.textContent = "";
   materialError.textContent = "";
@@ -50,21 +50,23 @@ function validateForm() {
     priceInput.focus();
     return false;
   }
+
+  // Price validation using regex (allowing decimals)
   var pricePattern = /^\d+(\.\d{1,2})?$/;
   if (!pricePattern.test(priceInput.value.trim())) {
     priceError.textContent = "Please enter a valid price (e.g., 10 or 10.99)!";
     priceInput.focus();
     return false;
   }
+
   if (emailInput.value.trim() === "") {
     emailError.textContent = "Please provide your email!";
     emailInput.focus();
     return false;
   }
 
-
-    if (phoneNumberInput.value.length !== 8 ){
-    phoneNumberError.textContent = "Phone number not valid!";
+  if (phoneNumberInput.value.trim() === "") {
+    phoneNumberError.textContent = "Please provide your phone number!";
     phoneNumberInput.focus();
     return false;
   }

@@ -161,6 +161,7 @@ main {
   padding: 10rem;
   margin-bottom: 0px;
 }
+
 #quote {
   position: relative;
   font-family: "Montserrat";
@@ -179,6 +180,7 @@ main {
   display: block;
   margin: 0 auto;
 }
+
 .artizenlogo {
   height: 300px;
   width: 300px;
@@ -554,9 +556,6 @@ textarea{
 .btn:hover{
   background: linear-gradient(-180deg, rgb(242, 237, 232) 0%, rgba(24, 24, 24, 0.3) 96%) no-repeat;
   transition: 0.5s ease ;
-
-  
-
 }
 /* footer */
 footer {
@@ -623,4 +622,5 @@ p {
   font-weight: bold;
   padding-left: 15px;
   color: rgba(255, 0, 0, 0.7);
+
 }
