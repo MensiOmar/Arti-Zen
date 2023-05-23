@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+    </link>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar glass" style="height: 70px;">
+        <!-- <span style="padding-top: 45px;"><a href="#home"><img class="img2"src="../assets/logo.png" width="40" style="margin: -25px -20px"> -->
+        <h1 class="logo">ARTI'ZEN</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="../landing page/index.html" class="cir_border">Home</a></li>
+            <li><a href="#../landing page/index.html" class="cir_border">Values</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">Best selection</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">Order</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">About</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">Feedback</a></li>
+        </ul>
+        <img src="../assets/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--end_Navbar-->
+    <section>
+        <h1>Add a Product</h1>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+          <label for="crafterName" class="small-input-1">
+            <span class="input-title">Crafter name:</span>
+            <input type="text" class="short_input text-input" name="crafterName" id="crafterName" placeholder="Enter your name">
+            <span id="crafterNameError" class="error"></span>
+          </label>
+        
+          <label for="productName" class="small-input-2">
+            <span class="input-title">Product name:</span>
+            <input type="text" class="short_input text-input" name="productName" id="productName" placeholder="Enter the product name">
+            <span id="productNameError" class="error"></span>
+          </label>
+        
+          <label for="material" class="small-input-1">
+            <span class="input-title">Material:</span>
+            <input type="text" class="short_input text-input" name="material" id="material" placeholder="Enter the material">
+            <span id="materialError" class="error"></span>
+          </label>
+        
+          <label for="price" class="small-input-2">
+            <span class="input-title">Price:</span>
+            <input type="text" class="short_input text-input" name="price" id="price" placeholder="Enter the price">
+            <span id="priceError" class="error"></span>
+          </label>
+        
+          <label for="email" class="small-input-1">
+            <span class="input-title">Email:</span>
+            <input type="email" class="short_input text-input" name="email" id="email" placeholder="Enter your Email">
+            <span id="emailError" class="error"></span>
+          </label>
+        
+          <label for="phone-number" class="small-input-2">
+            <span class="input-title">Phone Number:</span>
+            <input type="text" class="short_input text-input" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number">
+            <span id="phoneNumberError" class="error"></span>
+          </label>
+        
+          <label for="address" class="small-input-3">
+            <span class="input-title">Address:</span>
+            <input type="text" class="short_input text-input" name="address" id="address" placeholder="Enter your address">
+            <span id="addressError" class="error"></span>
+          </label>
+        
+          <label for="description" class="big-input">
+            <span class="input-title">Description:</span>
+            <textarea name="description" id="description" cols="30" rows="10" class="text-input"
+              placeholder="Any particular notes..."></textarea>
+            <span id="descriptionError" class="error"></span>
+          </label>
+        
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+    </section>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3>About Us</h3>
+              <p>Artizen supports craftsmen in selling their handmade products, promotes traditional craftsmanship, and fosters appreciation for the value and beauty of handmade goods.</p>
+            </div>
+      
+            <div class="col">
+              <h3>Contact Us</h3>
+              <p> Phone: +216 99 120 507<br> Email: contact@artizen.com</p>
+            </div>
+          </div>
+          <hr>
+          <p>&copy; 2023 ARTI'ZEN, Inc. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+
+</html>

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARTI'ZEN</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+
 </head>
 <body>
    <!--navbar-->
@@ -89,8 +91,8 @@
     <!--order-->
     <section id="order">
       <div>
-        <a href="../order page/orderPage.html">
-          <p>Order your favorite</p>
+        <a href="../add product/index.html">
+          <p>Sell your product</p>
           <h1>></h1>
         </a>
       </div>
@@ -120,15 +122,21 @@
     <!--feedback-->
     <section id="feedback">
       <header>
-        <h1>give us your feedback</h1>
+        <h1>Give us your feedback</h1>
         <p>For feedback or any other questions drop a message here.</p>
       </header>
       <div id="feedback-form">
-        <form method="post">
-          <input type="text" name="name" placeholder="Enter your name" class="small-input" required>
-          <input type="email" name="email" placeholder="Enter your email" class="small-input" required>
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Enter you message"></textarea>
-          <input type="submit" placeholder="Send" class="btn">
+        <form method="post" name="myForm" onsubmit="return validateForm()">
+          <input type="text" id="name" placeholder="Enter your name" class="small-input">
+          <span id="nameError" class="error"></span>
+        
+          <input type="email" id="email" placeholder="Enter your email" class="small-input">
+          <span id="emailError" class="error"></span>
+        
+          <textarea id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+          <span id="messageError" class="error"></span>
+        
+          <button type="submit" placeholder="Send" class="btn">Submit</button>
         </form>
       </div>
     </section>
