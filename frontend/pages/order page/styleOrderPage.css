@@ -232,11 +232,9 @@ section>h1 {
   box-sizing: border-box;
   text-decoration: none;
   padding: 0px 40px;
-
   font-size: 13px;
   letter-spacing: 0.4px;
   cursor: pointer;
-
   z-index: 1;
   word-break: initial;
   outline: none;
@@ -343,4 +341,12 @@ p {
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+}
+.error{
+  display: block;
+  margin-bottom: 2%;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 15px;
+  color: rgba(255, 0, 0, 0.7);
 }
