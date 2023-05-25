@@ -18,7 +18,8 @@
             <li><a href="#home" class="cir_border">Home</a></li>
             <li><a href="#values" class="cir_border">Values</a></li>
             <li><a href="#best-selection" class="cir_border">Best selection</a></li>
-            <li><a href="#order" class="cir_border">Add product</a></li>
+            <li><a href="../products/products.php" class="cir_border">Products</a></li>
+            <li><a href="#order" class="cir_border">Add Product</a></li>
             <li><a href="#about" class="cir_border">About</a></li>
             <li><a href="#feedback" class="cir_border">Feedback</a></li>
         </ul>
@@ -70,25 +71,25 @@
       </header>
       <div id="products">
         <div class="product">
-          <a href="../order page/orderPage.html">
+          <a href="../order page/orderPage.php?id=1">
             <img class="prod-img" src="../../assets/crackle.png" aria-placeholder=""/>
             <p class="prod-name">Cracle</p>
           </a>
         </div>
         <div class="product">
-          <a href="../order page/orderPage.html">
+          <a href="../order page/orderPage.php?id=2">
             <img class="prod-img" src="../../assets/candle-holders.png" aria-placeholder=""/>
             <p class="prod-name">Candle holders</p>
           </a>
         </div>
         <div class="product">
-          <a href="../order page/orderPage.html">
+          <a href="../order page/orderPage.php?id=3">
             <img class="prod-img" src="../../assets/wood-guitar.png" aria-placeholder=""/>
             <p class="prod-name">Wood guitar</p>
           </a>
         </div>
         <div class="product">
-          <a href="../order page/orderPage.html">
+          <a href="../order page/orderPage.php?id=4">
             <img class="prod-img" src="../../assets/classic-brown-leather-backpack.png" aria-placeholder=""/>
             <p class="prod-name">Leather backpack</p>
           </a>
@@ -133,17 +134,17 @@
         <p>For feedback or any other questions drop a message here.</p>
       </header>
       <div id="feedback-form">
-        <form method="post" name="myForm" onsubmit="return validateForm()">
-          <input type="text" id="name" placeholder="Enter your name" class="small-input">
+        <form method="post" name="myForm" onsubmit="return validateForm()" action="../../../backend/forms/feedback.php">
+          <input type="text" id="name" name="name"placeholder="Enter your name" class="small-input">
           <span id="nameError" class="error"></span>
         
-          <input type="email" id="email" placeholder="Enter your email" class="small-input">
+          <input type="email" id="email" name="email" placeholder="Enter your email" class="small-input">
           <span id="emailError" class="error"></span>
         
-          <textarea id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+          <textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
           <span id="messageError" class="error"></span>
         
-          <button type="submit" placeholder="Send" class="btn">Submit</button>
+          <button type="submit" name="submit" placeholder="Send" class="btn">Submit</button>
         </form>
       </div>
     </section>

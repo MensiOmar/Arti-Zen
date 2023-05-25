@@ -18,9 +18,10 @@
         <h1 class="logo">ARTI'ZEN</h1></a></span>
         <ul class="nav-links">
             <li><a href="../landing page/index.html" class="cir_border">Home</a></li>
-            <li><a href="#../landing page/index.html" class="cir_border">Values</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">Values</a></li>
             <li><a href="../landing page/index.html" class="cir_border">Best selection</a></li>
-            <li><a href="../landing page/index.html" class="cir_border">Order</a></li>
+            <li><a href="../products/products.php" class="cir_border">Products</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">Add Product</a></li>
             <li><a href="../landing page/index.html" class="cir_border">About</a></li>
             <li><a href="../landing page/index.html" class="cir_border">Feedback</a></li>
         </ul>
@@ -29,7 +30,7 @@
     <!--end_Navbar-->
     <section>
         <h1>Add a Product</h1>
-        <form name="myForm" onsubmit="return validateForm()" method="post">
+        <form name="myForm" onsubmit="return validateForm()" method="post" action="../../../backend/forms/addproduct.php">
           <label for="crafterName" class="small-input-1">
             <span class="input-title">Crafter name:</span>
             <input type="text" class="short_input text-input" name="crafterName" id="crafterName" placeholder="Enter your name">
@@ -79,7 +80,7 @@
             <span id="descriptionError" class="error"></span>
           </label>
         
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" name="submit" class="btn">Submit</button>
         </form>
 
     </section>

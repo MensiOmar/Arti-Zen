@@ -1,3 +1,9 @@
+<?php
+    require('C:\xampp\htdocs\Arti-Zen\backend\forms\order.php');
+?>	
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +14,7 @@
     <title>Order Page</title>
     <link rel="stylesheet" href="./styleOrderPage.css">
     <script src="./script.js"></script>
-    </link>
+
 </head>
 
 <body>
@@ -18,9 +24,10 @@
         <h1 class="logo">ARTI'ZEN</h1></a></span>
         <ul class="nav-links">
             <li><a href="../landing page/index.html" class="cir_border">Home</a></li>
-            <li><a href="#../landing page/index.html" class="cir_border">Values</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">Values</a></li>
             <li><a href="../landing page/index.html" class="cir_border">Best selection</a></li>
-            <li><a href="../landing page/index.html" class="cir_border">Order</a></li>
+            <li><a href="../products/products.php" class="cir_border">Products</a></li>
+            <li><a href="../landing page/index.html" class="cir_border">Add Product</a></li>
             <li><a href="../landing page/index.html" class="cir_border">About</a></li>
             <li><a href="../landing page/index.html" class="cir_border">Feedback</a></li>
         </ul>
@@ -28,8 +35,11 @@
     </nav>
     <!--end_Navbar-->
     <section>
-        <h1>Order Now !</h1>
-        <form name="myForm" onsubmit="return validateForm()" method="post">
+        <div id="header">
+            <h1>Order for: <?php echo "$prod_name" ?></h1>
+            <h2>Price: <?php echo"$prod_price"?></h2>
+        </div>
+        <form name="myForm" onsubmit="return validateForm()" method="post" action="orderPage.php?id=<?php echo $id_prod?>">
             <label for="name" class="small-input-1">
                 <span class="input-title">Name:</span>
                 <input type="text" class="short_input text-input" name="name" placeholder="Enter your name">
@@ -56,7 +66,7 @@
                     placeholder="Any particular notes..."></textarea>
                     <span id="noteError" class="error"></span>
             </label>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" name="submit" class="btn">Submit</button>
 
         </form>
     </section>
